@@ -23,6 +23,7 @@ public:
   int rozmiar(string* blad);
   tablica(int rozm);
    ~tablica();
+  void mierze_czas();
   void licze_srednia(int ilosc_powtorzen,int ilosc_elementow,string* blad);
   void wypelniam_tablice(int ilosc_elementow,string* blad);
 

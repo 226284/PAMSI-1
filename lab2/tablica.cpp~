@@ -109,6 +109,10 @@ void tablica::powieksz_podwojnie(string* blad)
 
 }
 
+void tablica::mierze_czas()
+{
+cout<<"chuje muje ddzikie weze" << endl;
+}
 
 void tablica::licze_srednia(int ilosc_powtorzen,int ilosc_elementow,string* blad)
 {
