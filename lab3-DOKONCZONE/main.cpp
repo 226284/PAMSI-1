@@ -14,7 +14,7 @@ using namespace std;
 
 int main ()
 {
- 
+
   int tab_z_ilosciami_elementow[5];
   tab_z_ilosciami_elementow[0]=10;
   tab_z_ilosciami_elementow[1]=100;
@@ -36,11 +36,6 @@ int main ()
     baza[i]->licze_srednia(20,tab_z_ilosciami_elementow[j],blad);
     }
   }
-
-
-
-
-
 
   return 0;
 }

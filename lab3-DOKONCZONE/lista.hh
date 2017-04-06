@@ -18,6 +18,7 @@ class lista: public I_lista
 
   public:
   lista();
+  ~lista();
 
   void add(int wartosc_dodana);
   int get();
@@ -28,6 +29,7 @@ class lista: public I_lista
   int ostatni_wartosc();			//zwraca wartosc poprzedniego elementu
 
   void wyswietl();
+  void pop();
 
   void licze_srednia(int ilosc_powtorzen,int ilosc_elementow,string* blad);
   void wypelniam(int ilosc_elementow,string* blad);

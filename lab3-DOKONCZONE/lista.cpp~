@@ -12,27 +12,6 @@ lista::lista()
   pierwszy=NULL;
 }
 
-lista::~lista()
-{
-  while(pierwszy->nastepny!=NULL)
-  {
-  this->pop();
-  }
-  delete pierwszy;
-}
-
-void lista::pop()
-{
-element* temp = ostatni; 
-
-  if(ostatni!=0)
-  {
-    ostatni = ostatni->poprzedni;
-    ostatni->nastepny=NULL;  
-    delete temp;         
-  }
-}
-
 
 void lista::add(int wartosc_dodana)
 {
@@ -44,7 +23,6 @@ void lista::add(int wartosc_dodana)
   if (pierwszy==NULL)
   {
     pierwszy=nowy;		// jesli pierwszy na nic nie wskazywal, to dostaje adres "nowego" elementu, tam jest wartosc i wskaznik na null
-    ostatni=nowy;		//na poczatku ostatni beda pierwszymi (jeden element jest rownoczesnie ostatni i pierwszy)
   }
 
   else
@@ -72,15 +50,14 @@ int lista::find(int szukana_wartosc)
 {
   element *temp = pierwszy;
  
-  for(int i=0; i<rozmiar-1; i++)
+  for (int i=0; i<rozmiar-1; ++i)
   {
-    temp=temp->nastepny;
-    if(temp->wartosc==szukana_wartosc)
+    if (temp->nastepny->wartosc==szukana_wartosc)
     {
-      cout<<"znaleziono" <<endl;
-      return temp->wartosc;
+    cout<<"znaleziono"<<endl;
+    return temp->wartosc;
     }
-    
+    temp=temp->nastepny;
   }
   cout<<"NIE MA w liscie" << endl;
 
