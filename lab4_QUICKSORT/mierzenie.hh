@@ -12,7 +12,7 @@ public:
 
 /*
 czas_quick
-zwraca sredni czas sortowania z okreslonej ilosci powtorzen */ 
+zwraca sredni czas sortowania z okreslonej ilosci powtorzen*/ 
   virtual void czas_quick(int ilosc_powtorzen, string* blad)=0;
 };
 
