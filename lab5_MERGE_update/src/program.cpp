@@ -10,29 +10,29 @@ int main() {
 	*blad="brak bledow";
 	int wartosci[5]= {10,100,1000,10000,100000};
 	mierzenie* baza[5];
-	int metoda=1;
+	//int metoda=1;
 
-	//for(int i=0; i<5; i++)
-	//{
-	//baza[i]=new tablica(wartosci[i]);
-	//}
+	for(int i=0; i<5; i++)
+	{
+		baza[i]=new tablica(wartosci[i]);
+	}
 
-	//for(int i=0; i<5; i++)
-	//{
-	//baza[i]->czas_quick(20,blad);
-	//}
-
+	for(int i=0; i<5; i++)
+	{
+		baza[i]->czas_merge(20,blad);
+	}
+/*
 	// Sortowanie przez scalanie
-	int rozmiar = 100;
+	int rozmiar = 10;
 	int lewo = 0;
 	int prawo = rozmiar - 1;
 	tablica *tab = new tablica(rozmiar);
 	//tab->pokaz();
-	tab->wypelniam_tablice_losowo(rozmiar, blad);
+	tab->wypelniam_tablice_malejaco(rozmiar, blad);
 	tab->pokaz();
 	tab->mergesort(lewo, prawo);
 	tab->pokaz();
-
+*/
 	return 0;
 }
 
